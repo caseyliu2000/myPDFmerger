@@ -95,6 +95,7 @@ class MyWidget(QtWidgets.QWidget):
         merger.write(the_path)
         merger.close()
         print('merge success')
+        QMessageBox.information(self, "Success", "merge success")
     #选择保存的位置
     @Slot()
     def selectOutputPath(self):
